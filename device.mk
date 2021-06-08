@@ -14,3 +14,7 @@ $(call inherit-product, device/lenovo/sm8150-common/common.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
 
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
+
