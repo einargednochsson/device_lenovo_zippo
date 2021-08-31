@@ -21,9 +21,12 @@ $(call inherit-product, device/lenovo/sm8150-common/common.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay
 
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
