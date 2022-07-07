@@ -18,4 +18,14 @@
 <resources>
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">186</integer>
+
+    <!-- The default tiles to display in QuickSettings -->
+    <string name="quick_settings_tiles_default" translatable="false">
+        wifi,cell,location,bt,airplane,sync,ambient_display,dnd,flashlight,alarm,rotation,cast,screenrecord,gamingmode,dark,custom(com.google.android.gms/.nearby.sharing.SharingTileService)
+    </string>
+
+    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
+    <string name="quick_settings_tiles_stock" translatable="false">
+        internet,wifi,cell,location,bt,airplane,sync,ambient_display,dnd,flashlight,alarm,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,hotspot,gamingmode,inversion,saver,dark,work,night,reverse,reduce_brightness,aod,caffeine,heads_up,reading_mode,usb_tether,sound,onthego,cpuinfo,fpsinfo,compass,dataswitch,volume_panel,smartpixels,vpn
+    </string>
 </resources> 
