@@ -38,10 +38,6 @@ $(call inherit-product-if-exists, vendor/lenovo/zippo/zippo-vendor.mk)
 # sm8150-common
 $(call inherit-product, device/lenovo/sm8150-common/common.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
 # Prebuilts
 PRODUCT_PACKAGES += \
     RemovePackages
@@ -50,6 +46,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Recorder
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
