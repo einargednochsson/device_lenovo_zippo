@@ -23,5 +23,5 @@ PRODUCT_NAME := lineage_zippo
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="zippo" \
-    TARGET_DEVICE="zippo"
+    DeviceName=zippo \
+    DeviceProduct=zippo
