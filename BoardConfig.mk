@@ -26,7 +26,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/lenovo/zippo.config
 TARGET_KERNEL_SOURCE := kernel/lenovo/sm8150
-TARGET_KERNEL_CLANG_VERSION := latest
+TARGET_KERNEL_CLANG_VERSION := r498229b
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
