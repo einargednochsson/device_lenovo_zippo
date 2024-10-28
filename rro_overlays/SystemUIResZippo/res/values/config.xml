@@ -16,6 +16,9 @@
 */
 -->
 <resources>
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">186</integer>
+
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">
         wifi,cell,location,bt,airplane,sync,ambient_display,dnd,flashlight,alarm,rotation,cast,screenrecord,gamingmode,dark,custom(com.google.android.gms/.nearby.sharing.SharingTileService)
