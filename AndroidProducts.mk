@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_zippo.mk
+    $(LOCAL_DIR)/lineage_zippo.mk
