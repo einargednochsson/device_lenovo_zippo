@@ -10,6 +10,7 @@ $(call inherit-product, device/lenovo/zippo/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_EPPE := true
+BYPASS_CHARGE_SUPPORTED := true
 
 # Misc
  AXION_CAMERA_REAR_INFO := 48,8,16,2
