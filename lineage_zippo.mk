@@ -9,6 +9,7 @@ $(call inherit-product, device/lenovo/zippo/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_DISABLE_EPPE := true
+BYPASS_CHARGE_SUPPORTED := true
 
 # Misc
 AXION_CAMERA_REAR_INFO := 48,8,16,2
