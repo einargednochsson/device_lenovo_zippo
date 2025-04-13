@@ -8,6 +8,13 @@ $(call inherit-product, device/lenovo/zippo/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_DISABLE_EPPE := true
+
+# Misc
+AXION_CAMERA_REAR_INFO := 48,8,16,2
+AXION_CAMERA_FRONT_INFO := 32
+AXION_PROCESSOR := Snapdragon855
+AXION_MAINTAINER := EinarG
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
