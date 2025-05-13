@@ -8,6 +8,16 @@ $(call inherit-product, device/lenovo/zippo/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+DERPFEST_BUILD_TYPE := Official
+DERPFEST_BUILD_VARIANT := Stable
+EXTRA_UDFPS_ICONS := true
+
+# Enable quick tap
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
