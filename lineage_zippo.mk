@@ -17,6 +17,25 @@ AXION_CAMERA_FRONT_INFO := 32
 AXION_PROCESSOR := Snapdragon855
 AXION_MAINTAINER := EinarG
 
+# Define small and big core groups (used for setting processes affinity)
+AXION_CPU_SMALL_CORES := 0,1,2,3
+# CPU used by critical tasks like SystemUI animations/surfaceflinger etc.
+AXION_CPU_BIG_CORES := 4,5,6,7
+
+## CPUsets configuration
+# CPUset used for non-critical cpusets 
+AXION_CPU_BG := 0-3
+# CPUset used for foreground cpusets
+AXION_CPU_FG ?= 0-7
+# CPUset that will be used when limiting other cpusets except top-app
+AXION_CPU_LIMIT_BG := 0-1
+# CPUset that will be used to unlimit critical cpusets for UI
+AXION_CPU_UNLIMIT_UI ?= 0-7
+# CPUset that will be used when limiting critical cpusets for UI
+AXION_CPU_LIMIT_UI ?= 0-4
+
+# Wether to enable debugging for adb logcat purposes
+AXION_DEBUGGING_ENABLED := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
