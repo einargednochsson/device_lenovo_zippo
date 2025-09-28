@@ -26,9 +26,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_KERNEL_CONFIG += vendor/lenovo/zippo.config
 TARGET_KERNEL_SOURCE := kernel/lenovo/sm8150
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
-
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
