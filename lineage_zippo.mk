@@ -15,6 +15,17 @@ BYPASS_CHARGE_SUPPORTED := true
 AXION_CAMERA_REAR_INFO := 48,8,16,2
 AXION_CAMERA_FRONT_INFO := 32
 AXION_PROCESSOR := Snapdragon855
+
+# Lineage prebuilts
+ifneq ($(WITH_GMS),true) 
+TARGET_INCLUDES_LOS_PREBUILTS := true
+endif
+
+# Misc 
+AXION_CAMERA_REAR_INFO := 48,8,16,2 
+AXION_CAMERA_FRONT_INFO := 32 
+PRODUCT_NO_CAMERA := false 
+AXION_PROCESSOR := Snapdragon855 
 AXION_MAINTAINER := EinarG
 
 # Define small and big core groups (used for setting processes affinity)
