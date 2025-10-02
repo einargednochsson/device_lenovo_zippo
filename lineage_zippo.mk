@@ -11,15 +11,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_DISABLE_EPPE := true
 BYPASS_CHARGE_SUPPORTED := true
 
-# Misc
-AXION_CAMERA_REAR_INFO := 48,8,16,2
-AXION_CAMERA_FRONT_INFO := 32
-AXION_PROCESSOR := Snapdragon855
-
-# Lineage prebuilts
-ifneq ($(WITH_GMS),true) 
+# Lineage prebuits
 TARGET_INCLUDES_LOS_PREBUILTS := true
-endif
 
 # Misc 
 AXION_CAMERA_REAR_INFO := 48,8,16,2 
